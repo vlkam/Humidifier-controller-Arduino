@@ -44,8 +44,8 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\arduino\arduino-1.6.3\hardware\arduino\avr\cores\arduino;C:\arduino\arduino-1.6.3\hardware\arduino\avr\variants\standard;C:\Users\admin\Documents\Arduino\Humidifier;C:\arduino\arduino-1.6.3\libraries\dallas_temperature_control;C:\arduino\arduino-1.6.3\libraries\dallas_temperature_control\utility;C:\arduino\arduino-1.6.3\hardware\arduino\avr\libraries\EEPROM;C:\arduino\arduino-1.6.3\hardware\arduino\avr\libraries\EEPROM\utility;C:\arduino\arduino-1.6.3\libraries\LiquidCrystal_I2C1602V1;C:\arduino\arduino-1.6.3\libraries\LiquidCrystal_I2C1602V1\utility;C:\arduino\arduino-1.6.3\libraries\OneWire;C:\arduino\arduino-1.6.3\libraries\OneWire\utility;C:\arduino\arduino-1.6.3\hardware\arduino\avr\libraries\Wire;C:\arduino\arduino-1.6.3\hardware\arduino\avr\libraries\Wire\utility;C:\arduino\arduino-1.6.3\libraries;C:\arduino\arduino-1.6.3\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\admin\Documents\Arduino\libraries;C:\arduino\arduino-1.6.3\hardware\tools\avr/avr/include/;C:\arduino\arduino-1.6.3\hardware\tools\avr//avr/include/avr/;C:\arduino\arduino-1.6.3\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>C:\Users\admin\Documents\Arduino\Humidifier\Visual Micro\.Humidifier.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>C:\arduino\arduino-1.6.3\hardware\arduino\avr\cores\arduino;C:\arduino\arduino-1.6.3\hardware\arduino\avr\variants\standard;C:\Users\admin\Documents\Arduino\Humidifier\Humidifier-controller-Arduino;C:\arduino\arduino-1.6.3\libraries\dallas_temperature_control;C:\arduino\arduino-1.6.3\libraries\dallas_temperature_control\utility;C:\arduino\arduino-1.6.3\hardware\arduino\avr\libraries\EEPROM;C:\arduino\arduino-1.6.3\hardware\arduino\avr\libraries\EEPROM\utility;C:\arduino\arduino-1.6.3\libraries\LiquidCrystal_I2C1602V1;C:\arduino\arduino-1.6.3\libraries\LiquidCrystal_I2C1602V1\utility;C:\arduino\arduino-1.6.3\libraries\OneWire;C:\arduino\arduino-1.6.3\libraries\OneWire\utility;C:\arduino\arduino-1.6.3\hardware\arduino\avr\libraries\Wire;C:\arduino\arduino-1.6.3\hardware\arduino\avr\libraries\Wire\utility;C:\arduino\arduino-1.6.3\libraries;C:\arduino\arduino-1.6.3\hardware\arduino\avr\libraries;C:\Program Files (x86)\Visual Micro\Visual Micro for Arduino\Micro Platforms\default\debuggers;C:\Users\admin\Documents\Arduino\libraries;C:\arduino\arduino-1.6.3\hardware\tools\avr/avr/include/;C:\arduino\arduino-1.6.3\hardware\tools\avr//avr/include/avr/;C:\arduino\arduino-1.6.3\hardware\tools\avr/lib\gcc\avr\4.8.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\admin\Documents\Arduino\Humidifier\Humidifier-controller-Arduino\Visual Micro\.Humidifier-controller-Arduino.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
       <PreprocessorDefinitions>__AVR_ATmega328p__;__AVR_ATmega328P__;F_CPU=16000000L;ARDUINO=163;ARDUINO_AVR_UNO;ARDUINO_ARCH_AVR;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -78,6 +78,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Visual Micro\.Humidifier-controller-Arduino.vsarduino.h" />
     <ClInclude Include="Visual Micro\.Humidifier.vsarduino.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

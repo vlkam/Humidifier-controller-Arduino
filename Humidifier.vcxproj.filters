@@ -21,5 +21,8 @@
     <ClInclude Include="Visual Micro\.Humidifier.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Visual Micro\.Humidifier-controller-Arduino.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

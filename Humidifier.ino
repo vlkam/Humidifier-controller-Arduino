@@ -450,6 +450,7 @@ class WaterHeater : public HardwareDevice {
 public:
 	bool isEnabled;
 	WaterHeater(int pin_) : HardwareDevice(pin_){
+		pinMode(pin, OUTPUT);
 		Stop();
 	}
 
@@ -617,9 +618,6 @@ void loop()
 		MainMode = On;
 		StepsModeOn = Starting;
 		lcd_display.print("Starting...","");
-		
-		Serial.println(water_level_sensor_high.isEnabled);
-		Serial.println(water_level_sensor_low.isEnabled);
 	}
 
 	if (btnStop.IsPressed){
@@ -696,7 +694,8 @@ void loop()
 		setting.HeatingWater && 
 		water_level_sensor_high.isEnabled && 
 		water_level_sensor_low.isEnabled &&
-		setting.TargetTempOfWater > water_temperature_sensor->value)
+		setting.TargetTempOfWater > water_temperature_sensor->value &&
+		!water_heater.isEnabled)
 	{
 		Serial.println("Water heater on.");
 		water_heater.Start();
